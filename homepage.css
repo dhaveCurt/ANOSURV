@@ -1,0 +1,67 @@
+/* Homepage CSS */
+body {
+    background-color: #ffffff; /* Gray background color */
+    color: white; /* White text color */
+    font-family: Arial, sans-serif; /* Use Arial font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 100%; /* Limit container width */
+    margin: 0; /* Center container */
+    padding: 0; /* Add padding */
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end; /* Position navigation links to the right */
+    align-items: center; /* Align items vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 20px; /* Fixed padding for navigation */
+    border-radius: 0px; /* Rounded corners */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* Fixed padding for links */
+    margin-left: 10px; /* Add left margin */
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+    font-family: 'Lato', sans-serif; /* Apply Lato font */
+}
+
+.navigation a:last-child {
+    margin-right: 300px; /* Add right margin to the last link */
+    margin-left: 0px; /* Remove left margin for the last link */
+}
+
+.navigation a:hover {
+    transform: translateY(-5px); /* Move link up when hovered */
+}
+
+.navigation a:first-child {
+    margin-right: 500px; /* Push ANOSURV to the left */
+}
+
+.navigation .logo::first-letter {
+    font-size: 150%; /* Increase size of the first letter */
+    color: rgba(202, 190, 81, 1); /* Color of the first letter */
+}
+
+.navigation .logo {
+    font-family: 'Oswold', sans-serif;
+    font-size: 100px;
+    pointer-events: none; /* Make the ANOSURV text unclickable */
+    color: white; /* Ensure the logo text color is white */
+}
+
+.navigation .logo:hover {
+    transform: none; /* Prevent ANOSURV from moving on hover */
+    text-decoration: none; /* Remove underline from logo on hover */
+}
+
+
+
